@@ -8,7 +8,7 @@ health:
 	curl http://localhost:3001/health
 
 predictions:
-	curl http://localhost:3001/predictions
+	curl http://localhost:3001/predictions?product_id=${product_id}
 
 ## Postgres
 postgres-up:

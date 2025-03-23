@@ -11,10 +11,11 @@ use dotenv::dotenv;
 async fn main() {
     println!("Hello, world! How are you?");
     dotenv().ok();
+    let database_url = std::env::var("DATABASE_URL").expect("DATABASE_URL must be set");
 
     let db: Pool<Postgres> = PgPoolOptions::new()
         .max_connections(5)
-        .connect("postgresql://postgres:123456@localhost/postgres")
+        .connect(&database_url)
         .await
         .unwrap();
 
