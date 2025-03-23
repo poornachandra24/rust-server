@@ -1,4 +1,4 @@
-# rust-rest-server
+# Rust-Server
 
 This project is a REST API server built using Rust and the Axum framework. It includes endpoints for health checks and predictions, and it connects to a PostgreSQL database for data storage and retrieval.
 
