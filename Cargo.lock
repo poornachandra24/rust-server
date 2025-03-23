@@ -399,6 +399,8 @@ name = "rust-rest-server"
 version = "0.1.0"
 dependencies = [
  "axum",
+ "http",
+ "serde",
  "tokio",
 ]
 

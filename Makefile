@@ -6,3 +6,6 @@ run:
 
 health:
 	curl http://localhost:3001/health
+
+predictions:
+	curl http://localhost:3001/predictions
